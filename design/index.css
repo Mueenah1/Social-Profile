@@ -1,0 +1,165 @@
+body{
+    background: hsl(300, 24%, 96%);
+    background-image: url('../images/bg-pattern-bottom-desktop.svg');
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 2rem;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+#upper{
+    display: flex;
+    gap: 30%;
+    justify-content: flex-start;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#left p:nth-child(1){
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+#left p:nth-child(2){
+    margin-top: 1.5rem;
+    color: hsl(303, 10%, 53%);
+}
+.magenta{
+    color: hsl(300, 43%, 22%);
+    
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+#right div{
+    background: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    position: relative;
+}
+.one, .two, .three{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 1.5rem;
+    
+}
+.stars img{
+    height: 18px;
+    width: 18px;  
+    align-content: center;
+}
+.two{
+    left: 2rem;
+}
+.three{
+    left: 4rem;
+}
+
+
+
+#lower{
+    display: flex;
+    gap: 1.5rem;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 2rem;
+    background: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px hsl(300, 43%, 22%, 0.2);
+    position: relative;
+}
+.review:nth-child(2){
+    top: 1rem;
+}
+.review:nth-child(3){
+    top: 2rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.profile-details p{
+    margin: 0 auto 3px auto;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+.profile-details p:nth-child(2){
+    color: hsl(333, 80%, 67%);
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px){
+#upper{
+    flex-direction: column;
+    gap: 30%;
+    justify-content: center;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#left p:nth-child(1){
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+#left p:nth-child(2){
+    text-align: center;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+#right div{
+    background: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    position: relative;
+    align-content: center;
+    width: 100%;
+}
+.one, .two, .three{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0 0 0 ;
+    width: 100%;
+    text-align: center;
+}
+.two{
+    left: 0;
+}
+.three{
+    left: 0;
+}
+#lower{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.review:nth-child(2){
+    top: 0;
+}
+.review:nth-child(3){
+    top: 0;
+}
+}
